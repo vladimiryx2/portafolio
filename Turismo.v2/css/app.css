@@ -1,0 +1,690 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+
+body {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(rgba(235, 235, 235, 0.733), rgb(10, 26, 22));
+    color: #333;
+}
+
+/* galeria de fotos slider guatape*/
+.slider-guatape{
+    margin: 2% 30% 2%;
+    display: flex;
+    max-width: 500px;
+    height: 400px;
+    width: 100%;
+
+    overflow-x: scroll;
+    scroll-snap-type: x
+    mandatory;
+
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.slider-guatape img{
+    width: 100%;
+    object-fit: cover;
+
+    scroll-snap-align: center;
+}
+
+/* info guatape*/
+.container-info-guatape h2{
+    margin-bottom: 5%;
+}
+.main-guatape p{
+    width: 100%;
+    padding: 2% 30% 2%;
+    text-align: left;
+}
+.container-info-guatape{
+    display: flex;
+
+}
+.text-img-guatape{
+    width: 50%;
+    padding: 0;
+}
+.text-img-guatape img{
+    width: 100%;
+    padding: 10%;
+}
+
+
+.text-img-guatape p{
+ width: 100%;
+ padding: 0% 2% 0%;
+ margin: 0;
+
+}
+
+.imagen-tour-guatape img{
+    width: 90%;
+    padding: 0%;
+    margin-bottom: 1%;
+    
+
+}
+
+.tabla-guatape table th{
+    border: 2px solid black;
+}
+
+.tabla-guatape{
+    width: 50%;
+    font-size: larger;
+}
+
+.tabla-guatape p{
+     width: 100%;
+    padding: 0% 2% 0%;
+    margin-top: 5%;
+}
+/*footer*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.scroll{
+    height: 50%;
+    width: 50%;
+    display: flex;
+}
+
+.footer {
+    background-color: rgb(184, 202, 184);
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #888888;
+    display: block;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffffff;
+    padding-left: 60px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+    background-color: #6c878f57;
+}
+
+@media (max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    height: 300px;
+    padding: 5px 10%;
+    top: 0;
+}
+
+.header .logo img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header .logo {
+    padding-right: 20px;
+    order: 2;
+    margin-left: auto;
+    margin-top: 46px;
+}
+
+.header .nav-links {
+    margin-top: 215px;
+}
+
+.Menu {
+    display: none;
+    z-index: 10;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header nav ul li ul {
+    display: none;
+    z-index: 10;
+}
+
+header nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    width: 200px;
+    background-color: rgb(43, 170, 96);
+    top: 270px;
+    margin-left: -50px;
+    border: 1px solid rgb(215, 233, 59);
+    border-radius: 10%;
+}
+
+header nav ul li:hover {
+    background-color: rgba(76, 225, 12, 0.371);
+    color: brown;
+    border-radius: 10px;
+}
+
+.header .nav-menu {
+    display: none;
+}
+
+/* index */
+
+
+main {
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+.main1{
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-row,
+.container1,
+.container2,
+.container3 {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .container-row {
+        width: 1170px;
+    }
+
+}
+
+.img1 {
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.img2 {
+    width: 400px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 5px solid green;
+    margin-top: 100px;
+}
+
+p {
+    width: 400px;
+    height: 200px;
+    color: rgb(73, 45, 2);
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+
+
+
+/* Añade aquí el estilo para la imagen de fondo en el header */
+.header {
+    background-image: url('/imagenes/header1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: height 0.5s;
+}
+
+strong {
+    color: rgb(83, 56, 5);
+}
+
+
+
+
+/*viajes.html*/
+
+.container h1 {
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.barra {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20%;
+}
+
+.row img {
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.row {
+    width: 21%;
+    float: right;
+    background: rgba(0, 0, 0, 0.411);
+    border-radius: 10px 10px;
+    margin: 2%;
+    padding: 10px;
+
+}
+
+.row p{
+
+    height: 2%;
+   
+}
+
+.row h1 {
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.span {
+
+    border: 1px solid black;
+    position: absolute;
+    margin-right: 300px;
+}
+.galeria{
+    color: black;
+}
+.row p{
+    color: black;
+}
+
+.row h6 {
+    font-size: 16px;
+    width: 40%;
+    background: blue;
+}
+
+.star span {
+    padding: 10px ;
+    font-size: 30px;
+}
+h2{
+    padding: 10px;
+    font-size: 80%;
+ 
+}
+.paquete{
+    font-size: large;
+}
+
+.main-viajes{
+   
+    width:  auto;
+    height: 1600px;
+   
+    
+}
+.oferta h3{
+    text-decoration: line-through;
+    font-size: 80%;
+}
+
+.oferta{
+    border-top: 1px solid black;
+    margin-top: 5%;
+
+}
+
+.galeria{
+    align-items: center;
+}
+
+/* responcive*/
+
+@media (max-width: 915px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-size: 8px;
+        font-family: 'Encode Sans Semi Expanded', sans-serif;
+    }
+/*headers*/
+    .nav-links ul {
+        display: none;
+    }
+    .header{
+        height: 100px;
+
+    }
+    .header .logo img{
+        width: 90px;
+        height: 80px;
+    }
+    .header .logo{
+        margin-top: 5px;
+    }
+    .header .logo img:checked {
+        transform: scale(1.1);
+    }
+    .nav-links{
+        display: flex;
+        background-color: aqua;
+        margin: 10px;
+        min-width: 200px;
+        z-index: 10;
+
+
+       
+    }
+    .navbar{
+        background-color: #00c3ff;
+        z-index: 10;
+        width: 137px;
+        height: 86px;
+        margin-left: -30px;
+    }
+
+    .nav-links li{
+        margin: -17px;
+        padding-right: 1px;
+    }
+    .slider-guatape {
+        margin: 1% 9% 2%;
+        display: flex;
+        max-width: 488px;
+        width: 245px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        border-radius: 2px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .slider-guatape img {
+        width: 100%;
+        object-fit: cover;
+        scroll-snap-align: center;
+    }
+    .main-guatape p {
+        width: 100%;
+        padding: 1% 8% 6%;
+        text-align: left;
+        font-size: 9px;
+    }
+  
+
+
+    /*sallto del angel*/
+    .slider-salto {
+        margin: -22% 0% 2%;
+        display: flex;
+        max-width: 488px;
+        width: 245px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        border-radius: 2px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .text-img-guatape {
+        width: 31%;
+        padding: 0;
+    }
+
+    .header .logo {
+        padding-right: 2px;
+        order: 2;
+        margin-left: auto;
+        margin-top: 5px;
+    }
+
+    /*viajes*/
+    .row h6 {
+        font-size: 7px;
+        width: 70%;
+        background: blue;
+    }
+    .paquete {
+        font-size: 10px;
+    }
+   .row{
+    height: 270px;
+
+    width: 111px;
+   }
+
+   .row img{
+    width: 100%;
+    height: 71px;
+   }
+   .star i{
+    font-size: 1px;
+   }
+   .star span {
+    padding: 10px;
+    font-size: 14px;
+}
+.row p {
+    color: black;
+    margin-left: -160px;
+    padding-bottom: 10px;
+}
+.main-viajes {
+    width: auto;
+    padding-left: 8px;
+    margin: 43px;
+    height: 1332px;
+}
+   
+
+
+}
+main{
+   
+    width:  auto;
+    height: 2000px;
+   
+    
+}
+/*control the row*/
+.row2 {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/*define that kind of column */
+[class*="col"]{
+    position: relative;
+    min-height: 1px;
+    float: left;
+    
+}
+/*column container*/
+.col-12 {
+    width: 100%;
+    
+  }
+  .col-6 {
+    width: 49.3333%;
+    box-sizing: border-box;
+  }
+/*column container1*/
+.col-12 {
+    width: 100%;
+    
+  }
+  .col-6 {
+    width: 49.3333%;
+    box-sizing: border-box;
+  
+  }
+  .col-6 {
+    width: 49.3333%;;
+    box-sizing: border-box;
+   
+  }
+/*column container2*/
+.col-12 {
+    width: 100%;
+ }
+  .col-4 {
+    width: 31.33333333333%;
+    margin: auto;
+    box-sizing: border-box
+  }
+  .col-4 {
+    width: 31.33333333333%;
+    height: 25%;
+    display: block;
+    box-sizing: border-box;
+  }
+  .col-4 {
+    width: 31.33333333333%;
+    height: 25%;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+    
+}
+/*column container2*/
+.col-12 {
+    width: 100%;
+ }
+  .col-6 {
+    width: 48.33333333333%;
+    margin: auto;
+    box-sizing: border-box
+  }
+  .col-6 {
+    width: 48.33333333333%;
+    height: 25%;
+    display: block;
+    box-sizing: border-box;
+  } 
+
+
+  
+/*controls of containers*/
+  .container,
+  .container1,
+  .container2,
+  .container3 {
+    padding-right: 15px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/*controls of images(icons) the main page*/ 
+.img1{
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    
+}
+/*controls of images the main page*/
+.img2{
+    width: 400px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 5px solid green;
+    margin-top: 100px;
+}
+/*controls of paragrap*/
+
+p{
+    width: 400px;
+    height: 200px;
+    color: rgb(73, 45, 2);
+    font-family: 'Roboto', 
+    sans-serif;
+    font-weight: 400;
+}
+h1{
+    margin-top: 15px;
+    font-family: 'Roboto', 
+    sans-serif;
+    font-weight: 700;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+  </head>
+    <title>Login</title>
+</head>
+<body class="body">
+
+  <form class="contenedor">
+    <div class="mb-3 w-50 ">
+      <label for="correo" class="form-label">Correo</label>
+      <input type="email" class="form-control w-100 n" id="correo">
+    </div>
+    <div class="mb-3 w-50">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control w-100" id="password">
+    </div>
+    <button onclick="inicioSesion()" type="button" class="btn btn-primary">Iniciar sesion</button>
+  </form>
+
+
+<script>
+  function inicioSesion() {
+    var persons = [
+       {
+           nombre : "Manuela",
+           correo : "manuela@gmail.com",
+           genero : "female",
+           password : "password",
+           images : [
+                './images/img-1.jpg',
+                './images/img-2.jpeg',
+                './images/img-3.jpg',
+                './images/img-4.jpg',
+                './images/img-5.webp',
+                './images/img-6.jpg',
+                './images/img-7.jpg',
+                './images/img-8.jpg',
+                './images/img-9.webp',
+                './images/img-10.jpeg',
+           ]
+       },
+       {
+           nombre : "Samuel",
+           correo : "samuel@gmail.com",
+           genero : "male",
+           password : "password",
+           images : [
+               './images/img-11.jpg',
+               './images/img-12.jpg',
+               './images/img-13.jpeg',
+               './images/img-14.webp',
+               './images/img-15.jpg',
+               './images/img-16.jpg',
+               './images/img-17.webp',
+               './images/img-18.jpg',
+               './images/img-19.jpg',
+               './images/img-20.jpg',
+           ]
+       }
+   ];
+    let usuario = document.getElementById('correo');
+    let contrasena = document.getElementById('password');
+
+    persons.forEach(function (user) {
+      if (usuario.value == user.correo && contrasena.value == user.password) {
+        sessionStorage.setItem('nombre', user.nombre);
+        sessionStorage.setItem('auth', 1);
+       location.href = "home.html";
+      } else {
+        alert("Datos incorrectos");
+      }
+    });
+  }
+</script>
+</body>
+</html>

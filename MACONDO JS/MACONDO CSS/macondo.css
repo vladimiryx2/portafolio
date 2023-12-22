@@ -1,0 +1,51 @@
+*{
+    width: auto;
+    height: auto;
+}
+
+body {
+    font-family: 'Sofia';font-size: 22px;
+    background-image: url('./../imagenes/blue-feather-6959585_1280.jpg');
+    background-size: cover;
+
+}
+.resultado1{
+    border: solid goldenrod;
+    background-color: rgb(39, 116, 116);
+    border-radius: 10px 10px;
+    width: 250px;
+    padding-left: 15px;
+
+    
+}
+.alimentacion{
+    height: auto;
+    margin: 50px;
+    padding-left: 10px;
+}
+.caso1  {
+    border: solid 15px;
+    border-color: #0000008f ;
+    height: auto;
+    margin: 50px;
+    padding-right: 500px;
+    background-color: rgba(0, 255, 255, 0.541);
+    padding: 10px;
+    
+    border-radius: 15px;
+}
+.compra{
+    border-radius: 15px;
+}
+
+.macondo{
+
+    margin-top: 200px;
+    margin-left: 700px;
+    height: 50px;
+    width: 300px;
+}
+
+h2{
+    margin-left: 100px;
+}

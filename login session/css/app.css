@@ -1,0 +1,43 @@
+.contenedor{
+     margin-right: 100px;
+     margin-left: 300px;
+     margin-top: 50px;
+}
+
+.body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./../images/snow-angels-8435093_1280.png');
+    
+}
+button{
+    width: 100px;
+}
+    
+    
+.galeria{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./../images/photo_samuel.jpg');
+    
+}
+
+.none{
+    display: none;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: antiquewhite;
+}
+
+span{
+    color: rgb(251, 251, 251);
+}
+.body2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./../images/photo_manuela.jpg');
+}

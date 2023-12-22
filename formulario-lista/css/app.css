@@ -1,0 +1,13 @@
+body{
+    background-image: url('./../imagen/pen-2398693_1280.jpg');
+    background-repeat: no-repeat solid;
+    background-size: cover;
+
+}
+.card{
+  background-color: rgba(128, 128, 128, 0.093);  
+  margin-top: 200px;  
+  border-radius: 10px;
+  border-color: rgb(0, 0, 255);
+  box-shadow: 20px;
+}

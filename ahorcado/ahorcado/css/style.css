@@ -1,0 +1,102 @@
+*{
+    top: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("../img/suicide-2347543_1280.jpg");
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1{
+    color: rgba(214, 24, 11, 0.877);
+    margin: 1em;
+}
+
+#ahorcado{
+    height: 200px;
+    width: 200px;
+    left: 0;
+    background-image: url("../img/el-ahorcado.jpg") ;
+    border-radius: 2em;
+    margin-top: 2em;
+    
+    
+}
+
+#content-main{
+    margin-top: 5em;
+    width: 60em;
+    height: 40em;
+    background-color: #1e344588;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: rgb(1, 60, 172) solid;
+}
+#resultado{
+    position:fixed;
+    width: 100%;
+    color: aliceblue;
+    
+    text-align: center;
+    top: 10em;
+}   
+
+#output{
+    color: aliceblue;
+    font-size:3em;
+    margin: 2rem;
+    
+}
+
+#calcular{
+    color: #0099cc;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 4px;
+    padding: 12px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    
+
+}
+
+#calcular:hover {
+    background-color: #1fba00;
+    color: white;
+}
+
+input[type=text]{
+    
+    width: 40%; 
+    padding: 12px 20px;
+    font-size: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #008CBA;
+    color: white;
+    margin-left: 1em;
+    
+}
+::placeholder{
+    color: wheat;
+}
+
+.input{
+    background-color: #0099ccb2;
+}

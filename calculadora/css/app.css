@@ -1,0 +1,21 @@
+body{
+    background-image: url('./../imagenes/school-683552_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    margin-top: 200px;
+    
+}
+
+.card-body{
+box-shadow: 10px;
+    border: 10px solid rgba(0, 0, 0, 0.52);
+    padding: 50px;
+}
+.resultado{
+    box-shadow: 10px;
+    border: 10px solid rgba(28, 203, 16, 0.52);
+    padding: 2px;
+
+}

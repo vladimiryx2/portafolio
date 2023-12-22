@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./MACONDO CSS/macondo.css" href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <title>macondo</title>
+</head>
+<body>
+    <div class="macondo">
+        <span><h1>MACONDO</h1></span>
+    </div>
+    <div>
+        <span><h2>CASO 1:</h2></span>
+    </div>
+    <div class="caso1" >
+        <p>Hildebrando está alistando todo para poder viajar a Macondo, el sale de trabajar el día
+            viernes, y tiene un vuelo en la noche, pero el vuelo tiene escala en Medellín. Ese mismo
+            día le pagan a Hildebrando, a Hildebrando le pagan 2.500.000.
+            día viernes, Hildebrando llega al aeropuerto del dorado, se quiere comprar algo de
+            comer antes del vuelo, ya que hace escala en Medellín en la madrugada, y llegaría en la
+            mañana a Cartagena.
+            - no compra nada
+            - le tocara comprar algo en Medellín</p>
+    </div>
+    <div class="alimentacion">
+        <div>
+            <span><h3>Opciones de alimentacion aeropuerto:</h3></span>
+        </div>
+        <div>
+           <button class ="compra" id="compra1" onclick="compra()"><h3>Almojábana con gaseosa son 15.000</h3></button>  
+        </div>
+        <div>
+            <button class ="compra" id="compra2" onclick="compra2()"><h3>Subway con gaseosa 23.000</h3></button>
+        </div>
+        <div class="resultado1">
+            <p id="parrafo"></p>
+   
+        </div>
+    </div>
+    <div>
+        <span><h2>CASO 2:</h2></span>
+    </div>
+    <div class="caso1" >
+        <p>llega a la sala de espera, y revisa su maleta que no cumple con el tamaño de maleta de
+            mano, la aerolínea tiene el tamaño normal para las maletas de mano, 55 cm (alto) x 40
+            cm (largo) x 20 cm (ancho), y Hildebrando que va a abordar tiene una maleta de 60 cm
+            (alto) x 40 cm (largo)x 20x cm.
+            Es un poco más grande el tamaño normal, debe sacar ropa para disminuir el tamaño de la
+            maleta. como puede solucionar con matemáticas para que el área sea igual a la normal, y
+            que de las medidas correctas del tamaño que pide la aerolínea? Usar .math
+            La idea fundamental es que necesitamos reducir cada dimensión de la maleta
+            proporcionalmente para que todas las dimensiones cumplan con los límites establecidos
+            por la aerolínea.</p>
+
+        
+        <p><h3>Tamaño estándar para las maletas de mano:</h3>
+            <tr>
+                <td>alto Original = 55</td>
+                <td>largoOriginal = 40</td>
+                <td>anchoOriginal = 20</td>
+            </tr>
+        <p><h3>Tamaño original de la maleta de Hildebrando:</h3>
+            <tr>
+                <td>alto Original = 60</td>
+                <td>largoOriginal = 40</td>
+                <td>anchoOriginal = 20</td>
+            </tr>   
+            
+            <div>
+                <button class ="compra"  onclick="nuevas_dimensiones()"><h3>la maleta debe tener las dimensiones</h3></button>
+            </div>
+            <div class="resultado1">
+                <p id="dimensiones_alto"></p>
+                <p id="dimensiones_largo"></p>
+                <p id="dimensiones_ancho"></p>
+       
+            </div>
+     </div>
+     <div>
+        <span><h2>CASO 3</h2></span>
+     </div>
+     <div class="caso1">
+        <p>
+            ahora que Hildebrando se dirige a la ciudad de Medellín, llega a las 2 am, y debe abordar
+            a las 3 am para Macondo, se encuentra con el problema de que el wifi del aeropuerto
+            está fallando, y necesita asegurar su reserva en el hotel para el siguiente día, caminando
+            por el aeropuerto encuentra wifi, la red se llama " ElPassEs:
+            01110010_01101001_01110111_01101001", pero la contraseña está cifrada en números
+            binarios, además cobran 50.000 la hora.
+            tienen que crear un código que convierta los números binarios, a decimales y luego a
+            caracteres
+            
+            
+        </p>
+        <div>
+            <button class ="compra"  onclick="convertirAdecimales(binario)"><h3>la contraseña wifi es:</h3></button>
+        </div>
+        <div class="resultado1">
+            <p id="password"></p>
+            
+        </div>
+    </div>    
+        <div>
+            <span><h2>CASO 4</h2></span>
+        </div>
+        <div class="caso1">
+            <p>
+                al llegar a Macondo, se da cuenta que todos hablan diferente, solo hablan con la la vocal i
+                así que todo lo que dirá es con la vocal “i”pedir el taxi. Convertir: "Taxi me puede llevar al
+                hotel mariposas amarillas"
+            </p>
+            
+            <div>
+                <button class ="compra"  onclick="idioma_local()"><h3>traducir a idioma local:</h3></button>
+            </div>
+
+            <div class="resultado1">
+                <p id="local_laguage"></p>
+            </div>  
+        </div>
+
+        <div>
+            <span><h2>CASO 5</h2></span>
+        </div>
+        <div class="caso1">
+            <p>cuando llega al hotel, el taxi, le pide que le 300.000 pesos, y el queda sorprendido, asi
+                que empieza a negociar con él, y le dice que, si le gana papel piedra o tijera, le pagara los
+                300.000, pero si el taxista pierde, no le cobra nada. Solo será una ronda. Si hay empata,
+                no pasa nada.
+                si el taxista gana, se descontará del dinero disponible
+                
+            </p>
+            
+            <div>
+                <button class ="compra"  onclick="pagoTaxi()"><h3>pagar al taxista:</h3></button>
+            </div>
+
+            <div class="resultado1">
+                <p id="disponible"></p>
+                <p id="descuento"></p>
+                <p id="empate"></p>
+       
+            </div>  
+        </div>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./MACONDO JS/macondo.js"></script>
+
+   
+            
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+.container{
+    background-image: url('./../imagenes/ai-generated-8033272_1280.jpg');
+    margin-top: 200px;
+    width: 1500px;
+    padding: 120px;
+    border-radius: 10px;
+    border: 20px solid ;
+}
+body{
+    background-image: url('./../imagenes/concept-7341384_1280.jpg');
+}
+.card{
+    background-color: antiquewhite;
+}
+.card-body{
+    background-color: rgb(212, 160, 96);
+}
+.tr{
+    background-color: bisque;
+}
